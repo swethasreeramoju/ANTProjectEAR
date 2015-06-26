@@ -9,4 +9,4 @@
       <fileset dir="${build.dir}" includes="*.jar,*.war"/>
     </ear>
 </target>
-</project>
+</project> 
