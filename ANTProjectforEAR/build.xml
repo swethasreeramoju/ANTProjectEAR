@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="test_ear" name="ANTProjectforEAR">
+    <property name="build.dir" value="WebContent"/>
+    <target name="test_ear">
+    <war destfile="dist/ANTProjectforEAR.war" needxmlfile='false'>
+      <fileset dir="${build.dir}" excludes="*build*.xml"/>
+    </war>
+    <ear destfile="dist/ANTProjectforEAR.ear" appxml="WebContent/META-INF/application.xml">
+      <fileset dir="${build.dir}" includes="*.jar,*.war"/>
+    </ear>
+</target>
+</project>
